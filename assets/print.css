@@ -1,0 +1,70 @@
+/* Welcome to Compass. Use this file to define print styles.
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/print.css" media="print" rel="stylesheet" type="text/css" /> */
+/* ==========================================================================
+   Print styles
+   ========================================================================== */
+@media print {
+  /* line 9, print.scss */
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  /* line 16, print.scss */
+  a,
+  a:visited {
+    text-decoration: underline; }
+
+  /* line 21, print.scss */
+  a[href]:after {
+    content: " (" attr(href) ")"; }
+
+  /* line 25, print.scss */
+  abbr[title]:after {
+    content: " (" attr(title) ")"; }
+
+  /*
+   * Don't show links for images, or javascript/internal links
+   */
+  /* line 33, print.scss */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: ""; }
+
+  /* line 39, print.scss */
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  /* line 45, print.scss */
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */ }
+
+  /* line 49, print.scss */
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  /* line 54, print.scss */
+  img {
+    max-width: 100% !important; }
+
+  @page {
+    margin: 0.5cm; }
+  /* line 62, print.scss */
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  /* line 69, print.scss */
+  h2,
+  h3 {
+    page-break-after: avoid; } }
