@@ -70,11 +70,12 @@
     <div class="wrapper">
         <div id="sb-search" class="sb-search" role="search">
             <!-- from codrops expanding search bar -->
-            <form action="https://humboldt.edu/results" id="cse-search-box">
-                <input type="hidden" name="cx" value="016116879625100262331:nyxfuocjlyc">
-                <input type="hidden" name="cof" value="FORID:11">
-                <label class="visuallyhidden" for="google-cse">Search</label>
-                <input type="text" name="gq" size="15" placeholder="Search" class="google-cse" id="google-cse">
+            <form action="https://humboldt.edu//search/google" id="search-block-form">
+                <label for="edit-keys" class="visuallyhidden">Search</label>
+                <input data-drupal-selector="edit-keys" type="search" id="edit-keys"
+                       name="keys" value="" size="15" placeholder="Search" class="form-search google-cse">
+<!--                <input data-drupal-selector="edit-submit" type="submit" id="edit-submit"-->
+<!--                       value="Search" class="button js-form-submit form-submit">-->
             </form>
             <span class="sb-icon-search"></span>
         </div><!-- /search -->
