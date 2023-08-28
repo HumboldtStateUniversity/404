@@ -5094,7 +5094,9 @@ table th[class*="col-"] {
 .masthead-wrap {
     background: #fff;
 }
-
+#main-content {
+    padding-top: 1.5rem;
+}
 .wrapper,
 .content-wrap,
 .photo-wrap {
